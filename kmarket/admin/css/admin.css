@@ -1,0 +1,597 @@
+        /*초기화*/
+        *{
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+        ul, ol {list-style:none;}
+        a{text-decoration: none; color: #111;}
+
+        #admin-wrapper{
+            width: 100%;
+            height: auto;
+        }
+
+        /*해더영역*/
+        header{
+            width: 100%;
+            height: 120px;
+            background: url(../img/admin_bg_header.jpg) repeat-x;
+        }
+
+        header > div{
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        header > div > image {
+            float: left;
+            margin-top: 46px;
+        }
+        header > div > p {
+            float: right;
+            color: #fff;
+            margin-top: 46px;
+        }
+        header > div > p > span {
+            margin-right: 16px;
+        }
+        header > div > p > a {
+            color: #fff;
+        }
+
+        /*메인영역 -공통*/
+        main{
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;            
+        }
+
+
+
+        main > aside {
+            float: left;
+            width: 270px;
+            min-height: 600px;
+            background: url('../img/admin_bg_aside.jpg') repeat-y;
+            border-left: 1px solid #c0c0c0;
+            box-sizing: border-box;
+        }
+
+        #gnb{
+            width: 100%;
+            height: auto;
+        }
+        #gnb > li{
+            width: 100%;
+            height: auto;
+            border-top:  1px solid #c0c0c0;
+            box-sizing: border-box;
+        }
+        #gnb > li:last-child {
+            border-bottom:  1px solid #c0c0c0;
+        }
+        #gnb > li > a{
+            display: block;
+            width: 100%;
+            height: 66px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #555;
+            line-height: 66px;
+        }
+        #gnb ol{
+            display: none;
+            width: 100%;
+            height: auto;
+
+        }
+        #gnb ol > li {
+            width: 100%;
+            height: 32px;
+        }
+        #gnb ol > li > a{
+            display: block;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+            
+        main > section {
+            float: right;
+            width: 1130px;
+            min-height: 600px;
+            box-sizing: border-box;
+        }
+        
+
+        /*메인영역 -index*/
+
+        #main {
+
+            padding: 20px;
+            display: block;
+        }
+        #main > nav {
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid #c0c0c0;
+            padding-bottom: 5px;
+        }
+        #main > nav >h3{
+            bottom: 10px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        #main > nav > p{
+            float: right;
+        }
+        #main > nav > p >strong{
+            font-weight: bold;
+        }
+
+        #main h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        #main > article {
+            width: 100%;
+            height: auto;
+        }
+        #main > article > table{
+            width: 100%;
+            border-collapse: collapse;
+            border-top: 2px solid #8798a3;
+        }
+        #main > article > table > tbody > tr > td{
+            border: 1px solid #8798a3;
+            padding: 5px;
+        }
+        #main > article > table > tbody > tr > td {
+            border: 1px solid #8798a3;
+            padding: 5px;
+        }
+        #main > article > table > tbody > tr > td > p {
+            display: flex;
+        }
+
+        #main > article > table > tbody > tr > td > p > :nth-child(2){
+            margin-left: auto ;
+        }
+
+
+        #main > article > table > tbody > :first-child{
+            background-color: #e5e5e5;
+            
+            
+        }
+        #main > article > table > tbody > :first-child > td >strong{
+            display: block;
+            font-size: 16px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #main > article > table > tbody > :first-child > td >span{
+            display: block;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #main > div {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        #main > div > article{
+            width: 50%;
+            margin-right: 10px;
+        }
+        #main > div > :nth-child(1){
+            margin-right: 15px;
+        }
+
+        #main > div > article > table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #8798a3;
+            border-top: 2px solid #8798a3;
+            
+        }
+        #main > div > article > table > tbody {
+            width: 100%;
+            height: 100%;
+        }
+        #main > div > article > table > tbody > tr > td {
+            padding: 5px;
+        }
+        #main > div > article > table > tbody > tr > :nth-child(1) {
+            width: 80%;
+            overflow: hidden;
+        }
+        #main > div > article > table > tbody > tr > :nth-child(2) {
+           float: right;
+        }
+        
+
+
+        /*풋터영역*/
+        footer{
+            width: 100%;
+            height: 60px;
+            background: #0d3a46;
+
+        }
+
+        footer > div {
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        footer > div > p {
+            padding-top: 16px;
+            box-sizing: border-box;
+            color: #fff;
+            font-weight: bold;
+        }
+
+
+        /*상품등록 : product-register */
+
+        
+
+        #product-register {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #product-register nav {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        #product-register nav p  {
+            bottom: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+        #product-register nav p strong {
+            font-weight: bold;
+        }
+        #product-register nav h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .spbl {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .spbl h2{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .spbl h3{
+            padding:10px 10px ;
+            background: #eaeaea;
+            margin-bottom: 10px;
+        }
+
+        .spbl table {
+            box-sizing: border-box;
+            border-collapse: collapse;
+            border-top: 1px solid #c0c0c0 ;
+        }
+
+        .spbl > table > tbody>  tr > td {
+            padding: 10px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        .spbl > table > tbody>  tr > :nth-child(1) {
+            background: #c0c0c0;
+            width: 20%;
+        }
+        .spbl > table > tbody>  tr > :nth-child(2) {
+            width: 80%;
+        }
+        .spbl > table > tbody>  tr > :nth-child(2) > select {
+            width: 150px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+
+        .gbgb {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .gbgb h2{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .gbgb h3{
+            padding:10px 10px ;
+            background: #eaeaea;
+            margin-bottom: 10px;
+        }
+
+        .gbgb table {
+            box-sizing: border-box;
+            border-collapse: collapse;
+            border-top: 1px solid #c0c0c0 ;
+        }
+
+        .gbgb > table > tbody>  tr > td {
+            padding: 10px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        .gbgb > table > tbody>  tr > :nth-child(1) {
+            background: #c0c0c0;
+            width: 20%;
+        }
+        .gbgb > table > tbody>  tr > :nth-child(2) {
+            width: 80%;
+        }
+        .gbgb > table > tbody>  tr > :nth-child(2) > span {
+            display: block;
+            color: #bc2e13;
+        }
+
+        .gbgb > table > tbody>  tr > :nth-child(2) > input {
+            width: 200px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+
+        .jggj {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .jggj h2{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .jggj h3{
+            padding:10px 10px ;
+            background: #eaeaea;
+            margin-bottom: 10px;
+        }
+
+        .jggj table {
+            box-sizing: border-box;
+            border-collapse: collapse;
+            border-top: 1px solid #c0c0c0 ;
+        }
+
+        .jggj > table > tbody>  tr > td {
+            padding: 10px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        .jggj > table > tbody>  tr > :nth-child(1) {
+            background: #c0c0c0;
+            width: 20%;
+        }
+        .jggj > table > tbody>  tr > :nth-child(2) {
+            width: 80%;
+        }
+        .jggj > table > tbody>  tr > :nth-child(2) > input {
+            width: 200px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        #product-register > form > input {
+            margin-top: 20px;
+            float: right;
+            width: 100px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        #product-register > p {
+            width: 100%;
+            height: 58px;
+            margin-top: 20px;
+            border: 1px solid #FDD845;
+            padding-left: 50px;
+            line-height: 58px;
+            background: #FFF6BF
+        }
+
+        #product-register > p > strong {
+            font-weight: bold;
+
+        }
+
+        
+
+        /*상품목록 : proxurct-list*/
+        #product-list {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #product-list nav {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #c0c0c0;
+        }
+        #product-list nav p  {
+            bottom: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+        #product-list nav p strong {
+            font-weight: bold;
+        }
+        #product-list nav h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .spml{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .spml > div {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .spml > div > select {
+            width: 150px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+            box-sizing: border-box;
+            margin-right: 5px;
+        }
+        .spml > div > input {
+            width: 200px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+            box-sizing: border-box;
+            margin-right: 5px;
+        }
+
+        .spml > table {
+            width: 100%;
+            height: auto;
+            border-collapse: collapse;
+            border-top: 3px solid #959595;
+        }
+
+        .spml > table > tbody > tr > td {
+            padding: 10px;
+        }
+
+        .spml > table > tbody > tr{
+            border-bottom: 1px solid #959595;
+        }
+        .spml > table > tbody > tr > td >img {
+            width: 60px;
+        }
+        .spml > table{
+            text-align: center;
+            
+        }
+
+        .spml > table > tbody > tr > :nth-child(4){
+            text-align: left;
+        }
+        .spml > table > tbody > :first-child > :nth-child(4){
+            text-align: center;
+        }
+        .spml > table > tbody > :first-child {
+            background: #c0c0c0;
+        }
+
+        .spml > table > tbody > :first-child > td {
+            font-weight: bold;
+        }
+
+        
+        .spml > input {
+            float: left;
+            width: 100px;
+            margin-top: 10px;
+            padding: 6px;
+            border: 1px solid #959595;
+            font-size: 13px;
+            background-color: #fefefe;
+            color: #333;
+        }
+
+        .paging {
+            margin: 30px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paging > span{ 
+            display: flex;
+            align-items: center;
+        }
+        .paging > span > a {
+            color: #777;            
+            font-size: 11px;
+        }
+        .paging > span > a:hover {
+            text-decoration: underline;
+        }
+        .paging > .num > a {
+            min-width: 14px;
+            margin: 0 2px;
+            padding: 8px 9px;
+            border: 1px solid #c4c4c4;
+            color: #000;
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .paging > .num > a:hover {
+            border: 1px solid #454c5f;
+            text-decoration: none;
+        }
+        .paging > .num > a.on {
+            color: #fe434c;
+            font-weight: bold;
+        }
+
+        .tip {
+            width: 100%;
+            height: 58px;
+            margin-top: 20px;
+            border: 1px solid #8497BF;
+            padding-left: 50px;
+            line-height: 58px;
+            background: #A8B2C5
+        }
+
+        .tip > p > strong {
+            font-weight: bold;
+
+        }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃2</title>
+    <style>
+        #wrapper{
+            width: 980px;
+            height: auto;
+            border: 1px solid #cccccc;
+            margin: 0 auto;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+        section{
+            overflow: hidden;
+            width: 100%;
+            height: auto;
+            
+        }
+        section > article {
+            float: left;
+            width: 82%;
+            min-height: 500px;
+            border: 1px dashed #cccccc;
+            box-sizing: border-box;
+        }
+        section > aside {
+            float: right;
+            width: 18%;
+            min-height: 500px;
+            border: 1px dashed #cccccc;
+            box-sizing: border-box;
+            background: gray;
+        }
+        footer{
+            width: 100%;
+            height: 160px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>해더</h1>
+            <p>상단 메뉴</p>
+        </header>
+        <section>
+            <article>
+                <h2>본문내용</h2>
+            </article>
+            <aside>
+                <h2>사이드</h2>
+            </aside>
+        </section>
+        <footer>
+            <h1>풋터</h1>
+            <p>하단메뉴</p>
+        </footer>
+    </div>
+</body>
+</html>

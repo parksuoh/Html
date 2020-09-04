@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderform</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript">
+                    
+    $(document).ready(function () {
+        $('.pcheck').click(function () {
+            var paycheck1 = $('input[id="paycheck1"]').is(":checked");
+            var paycheck2 = $('input[id="paycheck2"]').is(":checked");
+            var paycheck3 = $('input[id="paycheck3"]').is(":checked");
+            var paycheck4 = $('input[id="paycheck4"]').is(":checked");
+            
+            if(paycheck1==true){
+                $('.order7check1').css("z-index", "1");
+                $('.order7check2, .order7check3, .order7check4').css("z-index", "0");
+            }else if(paycheck2==true){
+                $('.order7check1, .order7check3, .order7check4').css("z-index", "0");
+                $('.order7check2').css("z-index", "1");
+            }else if(paycheck3==true){
+                $('.order7check1, .order7check2, .order7check4').css("z-index", "0");
+                $('.order7check3').css("z-index", "1");
+            }else if(paycheck4==true){
+                $('.order7check1, .order7check2, .order7check3').css("z-index", "0");
+                $('.order7check4').css("z-index", "1");
+            }
+        });
+      });
+    </script>
+</head>
+<body>
+    <!--bigwrap-->
+    <div class="bigwrap">
+        <!--sidemanu-->
+        <div class="sidemenu">
+            <h3><a href="#">수오옷방:</a></h3>
+            <h2><a href="#">best items</a></h2>
+            <h2><a href="#">outer</a></h2>
+            <h2><a href="#">suit</a></h2>
+            <h2><a href="#">top</a></h2>
+            <h2><a href="#">shirt</a></h2>
+            <h2><a href="#">pants</a></h2>
+            <h2><a href="#">shoes</a></h2>
+            <h2><a href="#">bag</a></h2>
+            <h2><a href="#">acc</a></h2>
+            <a href="#"><img src="#"></a>
+            <h2><a href="#">notice</a></h2>
+            <h2><a href="#">q&a</a></h2>
+            <h2><a href="#">review</a></h2>
+            <h2><a href="#">event</a></h2>
+            <p>
+                T.1515-1515<br>
+                <br>
+                mon-fir am 11:00 – pm17:00<br>
+                Lunch pm 13:00 – pm 14:00<br>
+                <br>
+                bankinfo kb:12210204152483<br>
+                holder:박수오
+            </p>
+        </div>
+        <!--rightmain-->
+        <div class="rightmain">
+            <div class="header">
+                <span><a href="#">profile</a></span>
+                <span><a href="#">logout</a></span>
+                <span><a href="#">member</a></span>
+                <span><a href="#">cart</a></span>
+                <span><a href="#">order</a></span>
+                <span><a href="#">mypage</a></span>
+            </div>
+            <div class="indexmain">
+                <span>- order form</span>
+                <table class="order1">
+                    <tr>
+                        <td rowspan=2>해택정보</td>
+                        <td><strong>박수오</strong> 님은 , [white closet] 회원이십니다.</td>
+                    </tr>
+                    <tr>
+                        <td>가용적립금 : <strong>8,790원 </strong>   쿠폰 : <strong>0개</strong></td>
+                    </tr>
+                </table>
+                <div class="order2top">
+                    <h1>국내배송상품 주문내역</h1>
+                    <input type="button" value="이전페이지">
+                </div>
+                <table class="order2">
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>이미지</th>
+                        <th>상품정보</th>
+                        <th>판매가</th>
+                        <th>수량</th>
+                        <th>적립금</th>
+                        <th>배송구분</th>
+                        <th>배송비</th>
+                        <th>합계</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><div><img src="#"></div></td>
+                        <td>
+                            <a href="#"><h3>Runi half kara tee<div id="hit">HIT</div></h3></a>
+                            <h2>[옵션: BEIGE/FREE]</h2>
+                        </td>
+                        <td>26,000원</td>
+                        <td>1</td>
+                        <td>260원</td>
+                        <td>기본배송</td>
+                        <td>무료</td>
+                        <td>26,000원</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><div><img src="#"></div></td>
+                        <td>
+                            <a href="#"><h3>Tella span banding slacks (5color)</h3></a>
+                            <h2>[옵션: M/BEIGE]</h2>
+                        </td>
+                        <td>34,000원</td>
+                        <td>1</td>
+                        <td>340원</td>
+                        <td>기본배송</td>
+                        <td>무료</td>
+                        <td>34,000원</td>
+                    </tr>
+                </table>
+                <div class="order2bottom">
+                    <h1>[기본배송]</h1>
+                    <h3>상품구매금액 60,000 + 배송비 0 (무료) = 합계 : <strong>60,000원</strong> </h3> 
+                </div>
+                <div class="order2bottom2">
+                    <h2>! 상품의 옵션 및 수량 변경은 상품상세 또는 장바구니에서 가능합니다.</h2>
+                </div>
+                <div class="orderselect">
+                    <h3>선택상품을</h3> <input type="button" value="DELETE"><input type="button" value="EMPTY">
+                </div>
+
+                <div class="join2top">
+                    <h2>기본정보</h2>
+                    <h3><span id="star">*</span> 필수입력사항</h3>
+                </div>
+                <table class="order3">
+                    <tr>
+                        <td>주문하시는분<span id="star">*</span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>주소<span id="star">*</span></td>
+                        <td>
+                            <input type="text">-<input type="btn" id="addsearch" value="우편번호검색"><br>
+                            <input type="text">기본주소<br>
+                            <input type="text">나머지주소
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>일반전화<span id="star">*</span></td>
+                        <td>
+                            <select id="tellist">
+                            <option>02</option>
+                            <option>031</option>
+                            <option>032</option>
+                            <option>033</option>
+                            <option>044</option>
+                            <option>051</option>
+                            <option>052</option>
+                            <option>053</option>
+                            <option>055</option>
+                            <option>061</option>
+                            <option>062</option>
+                            <option>063</option>
+                            <option>064</option>
+                        </select>-
+                        <input type="text">-<input type="text">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>휴대전화</td>
+                        <td>
+                            <select id="phlist">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>-
+                            <input type="text">-<input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이메일<span id="star">*</span></td>
+                        <td><input type="text">@<input type="text">
+                            <select id="emaillist">
+                                <option>-이메일선택-</option>
+                                <option>naver.com</option>
+                                <option>daum.net</option>
+                                <option>nate.com</option>
+                                <option>hotmail.com</option>
+                                <option>yahoo.com</option>
+                                <option>empas.com</option>
+                                <option>korea.com</option>
+                                <option>dreamwiz.com</option>
+                                <option>gmail.com</option>
+                                <option>직접입력</option>
+                            </select>
+                            <h1>이메일을 통해 주문처리과정을 보내드립니다. <br>
+                                이메일 주소란에는 반드시 수신가능한 이메일주소를 입력해 주세요.</h1>
+                        </td>
+                    </tr>
+                </table>
+                <div class="join2top">
+                    <h2>배송지정보</h2>
+                    <h3><span id="star">*</span> 필수입력사항</h3>
+                </div>
+                <table class="order4">
+                    <tr>
+                        <td>배송지 선택</td>
+                        <td><input type="radio" name="addsel">주문자 정보와 동일 <input type="radio" name="addsel">새로운배송지 <input type="btn" id="addsearch" value="주소록보기"></td>
+                    </tr>
+                    <tr>
+                        <td>받으시는분<span id="star">*</span></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>주소<span id="star">*</span></td>
+                        <td>
+                            <input type="text">-<input type="btn" id="addsearch" value="우편번호검색"><br>
+                            <input type="text">기본주소<br>
+                            <input type="text">나머지주소
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>일반전화</td>
+                        <td>
+                            <select id="tellist">
+                                <option>02</option>
+                                <option>031</option>
+                                <option>032</option>
+                                <option>033</option>
+                                <option>044</option>
+                                <option>051</option>
+                                <option>052</option>
+                                <option>053</option>
+                                <option>055</option>
+                                <option>061</option>
+                                <option>062</option>
+                                <option>063</option>
+                                <option>064</option>
+                            </select>-
+                            <input type="text">-<input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>휴대전화<span id="star">*</span></td>
+                        <td>
+                            <select id="phlist">
+                                <option>010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>-
+                            <input type="text">-<input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>배송메시지<span id="star">*</span></td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                </table>
+                <div class="join2top">
+                    <h2>결제 예정 금액</h2>
+                </div>
+                <table class="order5">
+                    <tr>
+                        <th>총 상품금액</th>
+                        <th>총 할인 + 부가결제 금액</th>
+                        <th>총 결제예정 금액</th>
+                    </tr>
+                    <tr>
+                        <td>60,000원</td>
+                        <td>-0원</td>
+                        <td>=60,000원</td>
+                    </tr>
+                </table>
+                <table class="order6">
+                    <tr>
+                        <td>총 할인금액</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td>총 부가결제금액</td>
+                        <td>0원</td>
+                    </tr>
+                    <tr>
+                        <td>적립금</td>
+                        <td><input type="text">원 (총 사용가능 적립금 : <strong>8,790</strong>원)<br>
+                            <br>
+                            - 적립금은 최소 0 이상일 때 결제가 가능합니다.<br>
+                            - 최대 사용금액은 제한이 없습니다.<br>
+                            - 1회 구매시 적립금 최대 사용금액은 8,790입니다.<br>
+                            - 적립금으로만 결제할 경우, 결제금액이 0으로 보여지는 것은 정상이며 [결제하기] 버튼을 누르면 주문이 완료됩니다.<br></td>
+                    </tr>
+                </table>
+                <div class="join2top">
+                    <h2>결제 수단</h2>
+                </div>
+                <div class="payall">
+                    <div class="order7check">
+                        <input type="radio" name="paycheck" id="paycheck1" class="pcheck" value="card" checked>카드 결제
+                        <input type="radio" name="paycheck" id="paycheck2" class="pcheck" value="escr">에스크로(실시간 계좌이체)
+                        <input type="radio" name="paycheck" id="paycheck3" class="pcheck" value="ph">휴대폰 결제
+                        <input type="radio" name="paycheck" id="paycheck4" class="pcheck" value="acc">무통장 입금
+                    </div>
+                    <div class="order7">
+                        <div class="order7check1">
+                            <p>최소 결제 가능 금액은 결제금액에서 배송비를 제외한 금액입니다.<br>
+
+                                소액 결제의 경우 PG사 정책에 따라 결제 금액 제한이 있을 수 있습니다.</p>
+                        </div>
+                        <div class="order7check2">
+                            <h2>예금주명</h2><input type="text"><br>
+                            <input type="checkbox">  에스크로(구매안전)서비스를 적용합니다.<br>
+                            소액 결제의 경우 PG사 정책에 따라 결제 금액 제한이 있을 수 있습니다.
+                        </div>
+                        <div class="order7check3">
+                            <p>소액 결제의 경우 PG사 정책에 따라 결제 금액 제한이 있을 수 있습니다.</p>
+                        </div>
+                        <div class="order7check4">
+                            <h2>입금자명</h2><input type="text"><br>
+                            <h2>입금은행</h2>                            
+                            <select id="banklist">
+                                <option>:::선택해주세요:::</option>
+                                <option>국민은행 박수오 12210204152483</option>
+                            </select>
+                            <p>최소 결제 가능 금액은 결제금액에서 배송비를 제외한 금액입니다.</p>
+                        </div>
+                    </div>
+                    <div class="paybtnbox">
+                        <div>
+                            <h1>최종결제 금액</h1>
+                            <h2><strong>60,000</strong>원</h2>
+                            <input type="button" value="ORDER 결제하기">
+                        </div>
+                        <div>
+                            <p>
+                                <strong>총 적립예정금액</strong>
+                                <span>600원</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>상품별 적립금</strong><span>600원</span><br>
+                                <strong>회원 적립금</strong><span>0원</span><br>
+                                <strong>쿠폰 적립금</strong><span>0원</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order8">
+                    <h1>무이자 할부 이용안내</h1>
+                    <p>무이자할부가 적용되지 않은 상품과 무이자할부가 가능한 상품을 동시에 구매할 경우 전체 주문 상품 금액에 대해 무이자할부가 적용되지 않습니다.<br>
+                        무이자할부를 원하시는 경우 장바구니에서 무이자할부 상품만 선택하여 주문하여 주시기 바랍니다.</p>
+                </div>
+
+                <div class="order9">
+                    <div><h1>이용안내</h1></div>
+                    <div>
+                        <h2>WindowXP 서비스팩2를 설치하신후 결제가 정상적인 단계로 처리되지 않는경우, 아래의 절차에 따라 해결하시기 바랍니다.</h2>
+                        <p>
+                            안심클릭 결제모듈이 설치되지 않은 경우 ActiveX 수동설치<br>
+                            Service Pack 2에 대한 Microsoft사의 상세안내
+                        </p>
+                        <h2>아래의 쇼핑몰일 경우에는 모든 브라우저 사용이 가능합니다.</h2>
+                        <p>
+                            KG이니시스, KCP, LG U+를 사용하는 쇼핑몰일 경우<br>
+                            결제가능브라우저 : 크롬,파이어폭스,사파리,오페라 브라우저에서 결제 가능<br>
+                            (단, window os 사용자에 한하며 리눅스/mac os 사용자는 사용불가)<br>
+                            최초 결제 시도시에는 플러그인을 추가 설치 후 반드시 브라우저 종료 후 재시작해야만 결제가 가능합니다.<br>
+                            (무통장, 휴대폰결제 포함)<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>    
+            <div class="footer">
+                <div>
+                    T.1515-1515<br>
+                    <br>
+                    mon-fir am 11:00 – pm17:00<br>
+                    Lunch pm 13:00 – pm 14:00<br>
+                    <br>
+                    bankinfo kb:12210204152483<br>
+                    holder:박수오</div>
+                <div>
+                    CONTACT US<br>
+                    E-MAIL<br>
+                    sooho0163@naver.com<br>
+                    <br>
+                    ADDRESS<br>
+                    04929 서울특별시 광진구 천호대로111길 19 (중곡동)<br>
+                    우진빌딩B1 (교환&반품은 공지사항을 참고해주세요)<br>
+                </div>
+                <div>
+                    ABOUT AGREEMENT PRIVACY<br>
+                    POLICY GUIDE<br>
+                    COMPANY 수오옷방<br>
+                    TELEPHONE 1515-1515<br>
+                    BUSINESS LICENSE 111-11-11111<br> 
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+    </div>
+</body>
+</html>

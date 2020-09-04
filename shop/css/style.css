@@ -1,0 +1,1867 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+
+.bigwrap{
+    width: 1330px;
+    height: auto;
+    margin:0 auto;
+    display: flex;
+}
+.sidemenu{
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 200px;
+}
+.sidemenu > h3  {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.sidemenu > h2{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.sidemenu > a > img{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 180px;
+    height: 50px;
+    margin: 10px;
+}
+.sidemenu > p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+    margin-top: 40px;
+}
+.rightmain{
+    width: 100%;
+
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.header > span{
+    margin: 5px;
+}
+.indexmain{
+    width: 100%;
+    min-height: 80vh;
+}
+.indexmain > span {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15px;
+}
+.indexbox{
+    width: 100%;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+.indexbox > div {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 350px;
+    height: 400px;
+    
+}
+.indexbox > div:hover{
+    background-color: black;
+    opacity: 0.1;
+}
+.footer{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    background-color: #DCDCDC;
+    color: #808080;
+}
+.footer > div {
+    flex: 1;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px 0;
+    flex-direction: column;
+}
+.loginform {
+    display: flex;
+    flex-direction: column;
+}
+.loginform > label{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.loginform > input{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 200px;
+    height: 25px;
+}
+#btn {
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #778899;
+    border: 1px solid #778899;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.login > h4 {
+    margin: 5px 0;
+}
+.login > h4 > a {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+}
+.login > h3 {
+    margin-top: 10px;
+}
+.login > h3 > a {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+}
+
+.join1 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 95%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 20px 0px 20px 10px;
+}
+.join1 > tbody > tr > td{
+    padding: 10px;
+}
+.join1 > tbody > tr > :first-child{
+    width: 20%;
+    border-right: 1px solid #DCDCDC;
+}
+#star{
+    color: red;
+}
+.join2top {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px 5px 10px;
+}
+.join2top > h2{
+    font-weight: bold;
+}
+
+.join2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 95%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 20px 0px 20px 10px;
+}
+.join2 > tbody > tr > td{
+    padding: 10px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr > :first-child{
+    width: 20%;
+    border-right: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr > td:nth-child(2){
+    font-size: 11px;
+}
+.join2 > tbody > tr:nth-child(1) > td:nth-child(2) > input[type=text]:nth-child(1){
+    width: 200px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+#idcheck{
+    width: 150px;
+    height: 15px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #ADD8E6;
+    border: 1px solid #ADD8E6;
+    cursor: pointer;
+}
+.join2 > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=password]{
+    width: 200px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=password]{
+    width: 200px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+#passqu{
+    width: 350px;
+    height: 20px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=text]{
+    width: 500px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(6) > td:nth-child(2) > input[type=text]{
+    width: 150px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(7) > td:nth-child(2) > input[type=text]:nth-child(1){
+    width: 90px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+#addsearch{
+    width: 90px;
+    height: 15px;
+    text-align: center;
+    margin-left: 10px;
+    background-color: #ADD8E6;
+    border: 1px solid #ADD8E6;
+    cursor: pointer;
+}
+.join2 > tbody > tr:nth-child(7) > td:nth-child(2) > input[type=text]:nth-child(4),
+.join2 > tbody > tr:nth-child(7) > td:nth-child(2) > input[type=text]:nth-child(6){
+    width: 300px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+#tellist{
+    width: 80px;
+    height: 20px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(8) > td:nth-child(2) > input[type=text]:nth-child(2),
+.join2 > tbody > tr:nth-child(8) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+#phlist{
+    width: 80px;
+    height: 20px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(9) > td:nth-child(2) > input[type=text]:nth-child(2),
+.join2 > tbody > tr:nth-child(9) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(10) > td:nth-child(2) > input[type=text]{
+    width: 300px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join2 > tbody > tr:nth-child(11) > td:nth-child(2){
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.join3top {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 40px 5px 10px;
+}
+.join3top > h2{
+    font-weight: bold;
+}
+.join3 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 95%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 20px 0px 20px 10px;
+}
+.join3 > tbody > tr > td{
+    padding: 10px;
+    border-bottom: 1px solid #DCDCDC;
+}
+.join3 > tbody > tr > :first-child{
+    width: 20%;
+    border-right: 1px solid #DCDCDC;
+}
+.join3 > tbody > tr > td:nth-child(2){
+    font-size: 11px;
+}
+.join3 > tbody > tr > td:nth-child(2) > input[type=text]:nth-child(1){
+    width: 100px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.join3 > tbody > tr > td:nth-child(2) > input[type=text]:nth-child(2),
+.join3 > tbody > tr > td:nth-child(2) > input[type=text]:nth-child(3)
+{
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+
+.join4top {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 40px 5px 10px;
+}
+.join4top > h2{
+    font-weight: bold;
+}
+.join4{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 95%;
+    height: 200px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 20px 0px 20px 10px;
+    padding: 10px;
+}
+.join4 > :first-child{
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    height: 150px;
+    resize: none;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+.btns > button {
+    margin: 0 10px;
+}
+
+.agreebtn{
+    height: 30px;
+    width: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    transition: .5s;
+    cursor: pointer;
+}
+.agreebtn:hover{
+    color: black;
+    background-color: white;
+    transition: .5s;
+}
+.cancelbtn{
+    height: 30px;
+    width: 200px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.cancelbtn:hover{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    background-color: white;
+    transition: .5s;
+}
+.cart1top{
+    margin: 80px 10px 20px 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cart1 {
+    width: 98%;
+    height: auto;
+    margin-left: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.cart1 > tbody > tr > th {
+    height: 30px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.cart1 > tbody > tr > th:nth-child(1){
+    width: 3%;
+}
+.cart1 > tbody > tr > th:nth-child(2){
+    width: 6%;
+}.cart1 > tbody > tr > th:nth-child(3){
+    width: 20%;
+}
+.cart1 > tbody > tr > th:nth-child(4){
+    width: 7%;
+}
+.cart1 > tbody > tr > th:nth-child(5){
+    width: 6%;
+}
+.cart1 > tbody > tr > th:nth-child(6){
+    width: 6%;
+}
+.cart1 > tbody > tr > th:nth-child(7){
+    width: 6%;
+}
+.cart1 > tbody > tr > th:nth-child(8){
+    width: 6%;
+}
+.cart1 > tbody > tr > th:nth-child(9){
+    width: 7%;
+}
+.cart1 > tbody > tr > th:nth-child(10){
+    width: 7%;
+}
+
+
+.cart1 > tbody > tr > td {
+    height: auto;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+
+.cart1 > tbody > tr > td:nth-child(1){
+    width: 3%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cart1 > tbody > tr > td:nth-child(2){
+    width: 6%;
+}
+.cart1 > tbody > tr > td:nth-child(2) > div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cart1 > tbody > tr > td:nth-child(2) > div >img{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 80px;
+    height: 90px;
+}
+.cart1 > tbody > tr > td:nth-child(3){
+    width: 20%;
+    color: #778899;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.cart1 > tbody > tr > td:nth-child(3) > a> h3{
+    margin-bottom: 10px;
+}
+#hit {
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #F8F8FF;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 5px;
+    display: inline;
+}
+.cart1 > tbody > tr > td:nth-child(4){
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.cart1 > tbody > tr > td:nth-child(5){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.cart1 > tbody > tr > td:nth-child(6){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.cart1 > tbody > tr > td:nth-child(7){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.cart1 > tbody > tr > td:nth-child(8){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.cart1 > tbody > tr > td:nth-child(9){
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.cart1 > tbody > tr > td:nth-child(10){
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+}
+.cart1 > tbody > tr > td:nth-child(10) > span
+{
+    display: block;
+    text-align: center;
+    border:1px solid black;
+    background-color: #F8F8FF;
+    box-sizing: border-box;
+    width: 80px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.cart1bottom{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.cart1bottom > span{
+    color: #CD5C5C;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+.cartselect {
+    margin: 50px 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.cartselect >:nth-child(1),
+.cartselect >:nth-child(1){
+    display: inline-block;
+}
+
+.cartselect > :last-child{
+    float: right;
+}
+.cartselect > input{
+    height: 30px;
+    width: 100px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.cartselect > input:hover{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    background-color: white;
+    transition: .5s;
+}
+.cart2{
+    margin: 50px 10px 50px 10px;
+    width: 95%;
+}
+.cart2 > tbody > tr > th,
+.cart2 > tbody > tr > td{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.cart2 > tbody > tr > th{
+    height: 40px;
+    vertical-align: middle;
+}
+.cart2 > tbody > tr > :nth-child(1){
+    width: 20%;
+}
+.cart2 > tbody > tr > :nth-child(2){
+    width: 20%;
+}
+.cart2 > tbody > tr > :nth-child(3){
+    width: 60%;
+}
+.cart2 > tbody > tr > td{
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
+.cart2 > tbody > tr > td:nth-child(3){
+    color: #CD5C5C;
+}
+.order1{
+    width: 95%;
+    border: 1px solid #DCDCDC;
+    margin: 60px 20px ;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.order1 > tbody > tr {
+    height: 30px;
+}
+.order1 > tbody > :nth-child(1) > :nth-child(2),
+.order1 > tbody > :nth-child(2) > :nth-child(1)
+{
+    width: 90%;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.order1 > tbody > :nth-child(1) > :nth-child(2){
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order1 > tbody > :nth-child(1) > :nth-child(1){
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order1 strong{
+    font-weight: bold;
+}
+
+.order2top {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    width: 98%;
+    height: 30px;
+    margin: 0 10px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    background-color: #E6E6FA;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+.order2top > h1{
+    font-weight: bold;
+}
+.order2top > input{
+    border: none;
+    cursor: pointer;
+    background-color: #F5FFFA;
+    height: 20px;
+}
+
+
+
+
+.order2 {
+    width: 98%;
+    height: auto;
+    margin-left: 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.order2 > tbody > tr > th {
+    height: 30px;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+.order2 > tbody > tr > th:nth-child(1){
+    width: 3%;
+}
+.order2 > tbody > tr > th:nth-child(2){
+    width: 6%;
+}.order2 > tbody > tr > th:nth-child(3){
+    width: 20%;
+}
+.order2 > tbody > tr > th:nth-child(4){
+    width: 7%;
+}
+.order2 > tbody > tr > th:nth-child(5){
+    width: 6%;
+}
+.order2 > tbody > tr > th:nth-child(6){
+    width: 6%;
+}
+.order2 > tbody > tr > th:nth-child(7){
+    width: 6%;
+}
+.order2 > tbody > tr > th:nth-child(8){
+    width: 6%;
+}
+.order2 > tbody > tr > th:nth-child(9){
+    width: 7%;
+}
+
+
+.order2 > tbody > tr > td {
+    height: auto;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+
+.order2 > tbody > tr > td:nth-child(1){
+    width: 3%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.order2 > tbody > tr > td:nth-child(2){
+    width: 6%;
+}
+.order2 > tbody > tr > td:nth-child(2) > div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.order2 > tbody > tr > td:nth-child(2) > div >img{
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 80px;
+    height: 90px;
+}
+.order2 > tbody > tr > td:nth-child(3){
+    width: 20%;
+    color: #778899;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.order2 > tbody > tr > td:nth-child(3) > a> h3{
+    margin-bottom: 10px;
+}
+#hit {
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: #F8F8FF;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 5px;
+    display: inline;
+}
+.order2 > tbody > tr > td:nth-child(4){
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.order2 > tbody > tr > td:nth-child(5){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.order2 > tbody > tr > td:nth-child(6){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.order2 > tbody > tr > td:nth-child(7){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.order2 > tbody > tr > td:nth-child(8){
+    width: 6%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.order2 > tbody > tr > td:nth-child(9){
+    width: 7%;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.order2bottom{
+    width: 94%;
+    height: 25px;
+    margin: 0 10px;
+    padding: 10px 40px 0 10px;
+    border-bottom: 1px solid #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15px;
+}
+.order2bottom > h3 > strong{
+    color: #CD5C5C;
+}
+.order2bottom2{
+    width: 94%;
+    height: 25px;
+    margin: 0 10px;
+    padding: 10px 40px 0 10px;
+    border-bottom: 1px solid #DCDCDC;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 11px;
+}
+.order2bottom2 > h2{
+    color: red;
+}
+
+.orderselect {
+    margin: 10px 10px 40px 10px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+    padding-bottom:40px;
+    border-bottom: 1px solid black;
+}
+.orderselect >:nth-child(1),
+.orderselect >:nth-child(1){
+    display: inline-block;
+}
+
+.orderselect > :last-child{
+    float: right;
+}
+.orderselect > input{
+    height: 30px;
+    width: 100px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+.orderselect > input:hover{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    background-color: white;
+    transition: .5s;
+}
+.order3{
+    width: 98%;
+    margin: 10px 10px 60px 10px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.order3 > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order3 > tbody > tr > td {
+    padding: 10px;
+}
+.order3 > tbody > tr > :first-child{
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 15%;
+    background-color: #F5F5F5;
+    vertical-align: middle;
+}
+.order3 > tbody > :nth-child(1) > :nth-child(2) > input[type=text]{
+    width: 150px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=text]:nth-child(1){
+    width: 90px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=text]:nth-child(4),
+.order3 > tbody > tr:nth-child(2) > td:nth-child(2) > input[type=text]:nth-child(6){
+    width: 300px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]:nth-child(2),
+.order3 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]:nth-child(2),
+.order3 > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=text]:nth-child(1),
+.order3 > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=text]:nth-child(2){
+    width: 150px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order3 > tbody > tr:nth-child(5) > td:nth-child(2) > h1 {
+    color: #778899;
+    font-size: 13px;
+}
+
+.order4{
+    width: 98%;
+    margin: 10px 10px 70px 10px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.order4 > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order4 > tbody > tr > td {
+    padding: 10px;
+}
+.order4 > tbody > tr > :first-child{
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 15%;
+    background-color: #F5F5F5;
+    vertical-align: middle;
+}
+.order4 > tbody > :nth-child(2) > :nth-child(2) > input[type=text]{
+    width: 150px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order4 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]:nth-child(1){
+    width: 90px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order4 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]:nth-child(4),
+.order4 > tbody > tr:nth-child(3) > td:nth-child(2) > input[type=text]:nth-child(6){
+    width: 300px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order4 > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]:nth-child(2),
+.order4 > tbody > tr:nth-child(4) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order4 > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=text]:nth-child(2),
+.order4 > tbody > tr:nth-child(5) > td:nth-child(2) > input[type=text]:nth-child(3){
+    width: 80px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order4 > tbody > tr:nth-child(6) > td:nth-child(2) > textarea {
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    height: 30px;
+    resize: none;
+}
+.order5{
+    margin: 10px;
+    width: 95%;
+}
+.order5 > tbody > tr > th,
+.order5 > tbody > tr > td{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order5 > tbody > tr > th{
+    height: 40px;
+    vertical-align: middle;
+}
+.order5 > tbody > tr > :nth-child(1){
+    width: 20%;
+}
+.order5 > tbody > tr > :nth-child(2){
+    width: 20%;
+}
+.order5 > tbody > tr > :nth-child(3){
+    width: 60%;
+}
+.order5 > tbody > tr > td{
+    height: 80px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+}
+.order5 > tbody > tr > td:nth-child(3){
+    color: #CD5C5C;
+}
+
+.order6{
+    width: 98%;
+    margin: 10px 10px 70px 10px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px;
+}
+.order6 > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.order6 > tbody > tr > td {
+    padding: 10px;
+}
+.order6 > tbody > tr > :first-child{
+    border-right: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 15%;
+    vertical-align: middle;
+}
+.order6 > tbody > :nth-child(3) > :nth-child(2) > input{
+    width: 150px;
+    height: 15px;
+    border: 1px solid #DCDCDC;
+}
+.order6 > tbody > :nth-child(3) > :nth-child(2) strong {
+    color: #FF4500;
+}
+.payall{
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+.order7check{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 10px 10px 0 10px;
+    width: 730px;
+    height: 30px;
+    font-size: 14px;
+}
+.order7{
+    width: 730px;
+    height: 200px;
+    position: relative;
+}
+.order7check1,.order7check2,.order7check3,.order7check4{
+    font-size: 14px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 10px;
+    width: 730px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    line-height: 200%;    
+}
+.order7check1{
+    z-index: 1;
+}
+.order7check2{
+    z-index: 0;
+}
+.order7check3{
+    z-index: 0;
+}
+.order7check4{
+    z-index: 0;
+}
+.paybtnbox{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    height: 240px;
+    width: 300px;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    background-color: #FFFAF0;
+}
+.paybtnbox > :nth-child(1) {
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    line-height: 200%;
+}
+.paybtnbox > :nth-child(1) > h2{
+    color: #FF4500;
+} 
+.paybtnbox > :nth-child(1) > h2 > strong {
+    font-size: 25px;
+}
+.paybtnbox > :nth-child(1) > input{
+    height: 40px;
+    width: 90%;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.paybtnbox > :nth-child(2) {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding: 2px;
+    line-height: 200%;
+    font-size: 13px;
+}
+.paybtnbox > :nth-child(2) > p > strong{
+    float: left;
+    width: 150px;
+    height: 100%;
+    text-align: right;
+}
+.paybtnbox > :nth-child(2) > p > span{
+    color: #ff8b55;
+    font-weight: bold;
+    float: right;
+    
+}
+.paybtnbox > :nth-child(3) {
+    width: 100%;
+    padding: 4px;
+    line-height: 200%;
+    font-size: 11px;
+}
+.paybtnbox > :nth-child(3) > p > strong{
+    float: left;
+    width: 150px;
+    height: 100%;
+    text-align: right;
+}
+.paybtnbox > :nth-child(3) > p > span{
+    float: right;
+    padding-right: 10px;
+}
+
+.order8{
+    width: 98%;
+    height: 100px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    font-size:13px ;
+}
+.order8 > h1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.order9{
+    width: 98%;
+    height: 200px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size:13px ;
+}
+.order9 > :first-child {
+    width: 100%;
+    height: 26px;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #F0F8FF;
+}
+.order9 > :first-child > h1 {
+    font-weight: bold;
+    font-size: 14px;
+}
+.order9 > :last-child {
+    width: 100%;
+    padding: 5px;
+} 
+.order9 > :last-child > h2 {
+    margin: 10px 0;
+}
+.order9 > :last-child > p {
+    color: #A9A9A9;
+    line-height: 110%;
+}
+.profileinfo{
+    width: 98%;
+    height: 55px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 20px;
+    font-size:13px ;
+}
+.profileinfo > h1{
+    color: #A9A9A9;
+}
+#do{
+    margin: 0 0 10px 900px
+}
+
+.bestitem{
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 30px 10px;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+.bestitem > div {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+.bestitem > div > div{
+    width: 300px;
+    height: 340px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-left:20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.bestitem > div > h1{
+    font-size: 13px;
+    cursor: pointer;
+}
+.bestitem > div > h2{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.topitem{
+    width: 98%;
+    height: auto;
+    margin: 10px;
+    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 10px;
+}
+
+.topitem > div {
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+.topitem > div > div{
+    width: 300px;
+    height: 340px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-left:20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.topitem > div > h1{
+    font-size: 13px;
+    cursor: pointer;
+}
+.topitem > div > h2{
+    font-size: 12px;
+    font-weight: bold;
+}
+.pagenav{
+    width: 98%;
+    margin: 10px 0 30px 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 13px;
+}
+.pagenav a{
+    margin: 0 10px;
+}
+.toptop{
+    width: 98%;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+}
+.topimg{
+    width: 48%;
+    height: 98%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 10px;
+}
+.topinfo{
+    width: 48%;
+    height: 98%;
+    margin: 10px;
+}
+.topinfo > :nth-child(1) {
+    height: 25%;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+    padding:20px 0 ;
+    line-height: 250%;
+}
+.topinfo > :nth-child(1) > h2{
+    font-size: 13px;
+}
+
+.topinfo > :nth-child(2){
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+    padding:10px 0 ;
+    line-height: 130%;
+    font-size: 13px;
+}
+.topch{
+    width: 100%;
+    height: 100%;
+}
+.topch > tbody > tr > th{
+    width: 20%;
+    text-align: left;
+}
+.topch > tbody > tr > td{
+    height: 80%;
+    margin-left: 10px;
+}
+#size{
+    width: 90%;
+}
+.topinfo > :nth-child(3){
+    display: none;
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+    padding:10px 0 ;
+    font-size: 13px;
+}
+.selecttable {
+    width: 100%;
+    height: auto;
+}
+.selecttable > tbody > tr > :nth-child(1){
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.topinfo > :nth-child(4){
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #DCDCDC;
+    padding:10px 0 ;
+    font-size: 13px;
+}
+.topinfo > :nth-child(4) > h1 > strong {
+    font-weight: bold;
+}
+.topinfo > :nth-child(5){
+    height: auto;
+    width: 100%;
+    padding:10px 0 ;
+    display: flex;
+    justify-content: space-evenly;
+}
+.topinfo > :nth-child(5) >input{
+    width: 30%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+.topinfo > :nth-child(5) > :nth-child(1){
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.topinfo > :nth-child(5) > :nth-child(1):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.topinfo > :nth-child(5) > :nth-child(2),
+.topinfo > :nth-child(5) > :nth-child(3){
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+.topinfo > :nth-child(5) > :nth-child(2):hover,
+.topinfo > :nth-child(5) > :nth-child(3):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.infoimg{
+    width: 98%;
+    height: 2000px;
+    margin: 40px 10px 10px 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.wishitems{
+    width: 98%;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#wishitem {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+}
+#wishitem > div {
+    width: 180px;
+    height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-left:13px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#wishitem > h1{
+    font-size: 12px;
+    cursor: pointer;
+}
+#wishitem > h2{
+    font-size: 10px;
+    font-weight: bold;
+}
+.topreview{
+    width: 98%;
+    height: auto;
+    margin: 10px;
+}
+.topreview > :first-child {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.topreview > :first-child > h1{
+    margin: 10px;
+}
+.topreview > :first-child > div > input {
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.topreview > :first-child > div > :nth-child(1){
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.topreview > :first-child > div > :nth-child(1):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.topreview > :first-child > div > :nth-child(2){
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+.topreview > :first-child > div > :nth-child(2):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.reviewtable{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #DCDCDC;
+    font-size: 12px;
+}
+.reviewtable > tbody > tr > th {
+    height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DCDCDC;
+}
+.reviewtable > tbody > tr > :nth-child(1){
+    width: 10%;
+}
+.reviewtable > tbody > tr > :nth-child(2){
+    width: 60%;
+}
+.reviewtable > tbody > tr > :nth-child(3){
+    width: 10%;
+}
+.reviewtable > tbody > tr > :nth-child(4){
+    width: 10%;
+}
+.reviewtable > tbody > tr > :nth-child(5){
+    width: 10%;
+}
+.reviewtable > tbody > tr > td{
+    height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DCDCDC;
+}
+.reviewtable > tbody > tr > :nth-child(1),
+.reviewtable > tbody > tr > :nth-child(3),
+.reviewtable > tbody > tr > :nth-child(4),
+.reviewtable > tbody > tr > :nth-child(5){
+    text-align: center;
+}
+
+.noticetop{
+    width: 98%;
+    height: 80px;
+    margin: 10px;
+    padding-top: 15px;
+}
+.noticetop > h1 {
+    color: gray;
+}
+
+.notice {
+    margin-left: 10px;
+    width: 98%;
+    height: auto;
+    border-top: 1px solid #DCDCDC;
+    font-size: 12px;
+}
+.notice > tbody > tr > th {
+    height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DCDCDC;
+}
+.notice > tbody > tr > th {
+    height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DCDCDC;
+}
+.notice > tbody > tr > :nth-child(1){
+    width: 10%;
+}
+.notice > tbody > tr > :nth-child(2){
+    width: 60%;
+}
+.notice > tbody > tr > :nth-child(3){
+    width: 10%;
+}
+.notice > tbody > tr > :nth-child(4){
+    width: 10%;
+}
+.notice > tbody > tr > :nth-child(5){
+    width: 10%;
+}
+.notice > tbody > tr > td{
+    height: 30px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DCDCDC;
+}
+.notice > tbody > tr > :nth-child(1),
+.notice > tbody > tr > :nth-child(3),
+.notice > tbody > tr > :nth-child(4),
+.notice > tbody > tr > :nth-child(5){
+    text-align: center;
+}
+.nonotice{
+    height: 80px;
+    width: 98%;
+    border-bottom: 1px solid #DCDCDC;
+    margin-left: 10px;
+    margin-bottom: 50px ;
+    padding-top: 50px;
+}
+.nonotice > h1 {
+    text-align: center;
+}
+.noticebto{
+    width: 98%;
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    font-size:13px ;
+}
+.noticebto  select{
+    width: 80px;
+    height: 25px;
+    border: 1px solid #DCDCDC;
+}
+.noticebto input {
+    width: 200px;
+    height: 19px;
+    border: 1px solid #DCDCDC;
+}
+.reviewview{
+    margin: 10px;
+    width: 98%;
+}
+.coviewtable {
+    border-top: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 100%;
+}
+.coviewtable > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    height: 35px
+}
+.coviewtable > tbody > :nth-child(4){
+    height: 150px;
+}
+
+.coviewtable > tbody > tr > th{
+    vertical-align: middle;
+    width: 20%;
+}
+
+.coviewtable > tbody > tr > td {
+    vertical-align: middle;
+    line-height: 130%;
+}
+.cotablebtn{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cotablebtn > input{
+    width: 90px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+.cotablebtn > :nth-child(1){
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.cotablebtn > :nth-child(1):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.cotablebtn > :nth-child(2){
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+.cotablebtn > :nth-child(2):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.reviewcomment{
+    width: 100%;
+    border-top: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.reviewcomment > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+} 
+.reviewcomment > tbody > :first-child{
+    height: 30px;
+}
+.reviewcomment > tbody > :first-child > :nth-child(1){
+    text-align: center;
+    vertical-align: middle;
+}
+.reviewcomment > tbody > :first-child > :nth-child(2){
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.reviewcomment > tbody > :first-child > :nth-child(3){
+    text-align: right;
+    vertical-align: middle;
+}
+.reviewcomment > tbody > :first-child > :nth-child(3) >input{
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+.reviewcomment > tbody > :first-child > :nth-child(3) >input:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border: none;
+    cursor: pointer;
+}
+.reviewcomment > tbody > :nth-child(2) > td{
+    padding: 10px 30px;
+    line-height: 130%;
+}
+.writecomment{
+    width: 100%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    padding: 10px;
+}
+.commentid {
+    margin: 5px 0;
+}
+.commentid > input{
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 150px;
+    height: 19px;
+}
+.commenttext{
+    display: flex;
+}
+.commenttext > textarea{
+    width: 90%;
+    height: 50px;
+    margin-right: 5px;
+    border: 1px solid #DCDCDC;
+}
+.commenttext > input {
+    height: 55px;
+    width: 5%;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+}
+.reviewwtform{
+    margin: 10px;
+    width: 95%;
+
+}
+
+.rvrtfo {
+    border-top: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    width: 100%;
+}
+.rvrtfo > tbody > tr{
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    height: 35px
+}
+.rvrtfo> tbody > :nth-child(2){
+    height: 150px;
+}
+
+.rvrtfo > tbody > tr > th{
+    vertical-align: middle;
+    width: 20%;
+}
+
+.rvrtfo > tbody > tr > td {
+    vertical-align: middle;
+    line-height: 130%;
+}
+.rvrtfo > tbody > tr > td select{
+    width: 200px;
+}
+.rvrtfo > tbody > tr > td textarea{
+    width: 100%;
+    height: 130px;
+    border: 1px solid #DCDCDC;
+}
+.rvrtfo > tbody > :nth-child(3) > td > input{
+    height: 25px;
+    width: 100px;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.rvrtfo > tbody > :nth-child(4) > td > input{
+    border: 1px solid #DCDCDC;
+}
+
+.rvrtbtn{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.rvrtbtn > input{
+    width: 100px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+.rvrtbtn > :nth-child(2) {
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+.rvrtbtn > :nth-child(2):hover{
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+.rvrtbtn > :nth-child(1) {
+    color: black;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+.rvrtbtn > :nth-child(1):hover{
+    color: black;
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
