@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>rewebbasic</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">로고</a>
+        <ul>
+            <li><a href="#one" onclick="toggle()">one</a></li>
+            <li><a href="#two" onclick="toggle()">two</a></li>
+            <li><a href="#three" onclick="toggle()">three</a></li>
+            <li><a href="#four" onclick="toggle()">four</a></li>
+            <li><a href="#five" onclick="toggle()">five</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <!-- one -->
+    <section class="sec one" id="one">
+        <h1>하나</h1>
+    </section>
+
+    <!-- two -->
+    <section class="sec two" id="two">
+        <h2>둘</h2>
+    </section>
+
+    <!-- three -->
+    <section class="sec three" id="three">
+        <h3>셋</h3>
+    </section>
+
+    <!-- four -->
+    <section class="sec four" id="four">
+        <h4>넷</h4>
+    </section>
+
+    <!-- five -->
+    <section class="sec five" id="five">
+        <h5>다섯</h5>
+    </section>
+    
+    
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    function toggle(){
+        var header = document.querySelector("header");
+        header.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>

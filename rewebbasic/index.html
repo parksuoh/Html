@@ -6,6 +6,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>reweb2</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elm = ".sec";
+            $(elm).each(function (index) {
+                // 개별적으로 Wheel 이벤트 적용
+                $(this).on("mousewheel DOMMouseScroll", function (e) {
+                    e.preventDefault();
+                    var delta = 0;
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    } 
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+                    var moveTop = $(window).scrollTop();
+                    var elmSelecter = $(elm).eq(index);
+                    // 마우스휠을 위에서 아래로
+                    if (delta < 0) {
+                        if ($(elmSelecter).next() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).next().offset().top;
+                            }catch(e){}
+                        }
+                    // 마우스휠을 아래에서 위로
+                    } else {
+                        if ($(elmSelecter).prev() != undefined) {
+                            try{
+                                moveTop = $(elmSelecter).prev().offset().top;
+                            }catch(e){}
+                        }
+                    }
+                     
+                    // 화면 이동 0.8초(800)
+                    $("html,body").stop().animate({
+                        scrollTop: moveTop + 'px'
+                    }, {
+                        duration: 100, complete: function () {
+                        }
+                    });
+                });
+            });
+        }
+    </script>
+    
 </head>
 <body>
     
@@ -163,14 +209,14 @@
                     그대는물에 젖지 않은 성냥개비 같죠아무리 싫은 표정 지어도불타는 그 마음을 감출 수가 없다네</p>
             </div>
                 <div class="teamBx">
-                    <div class="member">
-                        <div class="imgBx">
-                            <img src="1.jpg">
+                <div class="member">
+                    <div class="imgBx">
+                        <img src="1.jpg">
+                    </div>
+                    <div class="details">
+                        <div>
+                            <h2>John Do<br><span>Creative Director</span></h2>
                         </div>
-                        <div class="details">
-                            <div>
-                                <h2>John Do<br><span>Creative Director</span></h2>
-                            </div>
                     </div>
                 </div>    
                 <div class="member">
