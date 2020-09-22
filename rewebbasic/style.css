@@ -82,6 +82,8 @@ header.sticky ul li a
     justify-content: center;
     align-items: center;
 }
+
+
 .banner h2{
     color: #fff;
     font-size: 90px;
@@ -100,6 +102,7 @@ header.sticky ul li a
     justify-content: center;
     align-items: center;
 }
+
 .sec .content{
     /*position: relative;*/
     text-align: center;

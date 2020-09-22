@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stylish', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.6s;
+    background: black;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+header .logo {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+header ul li a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 2em;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #000;
+}
+
+.sec{
+    background-color: #F8F8FF;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content{
+    text-align: center;
+    width: 100%;
+}
+
+.message h3 {
+    color: black;
+}
+.messageform{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.messageform form{
+    width: 100%;
+}
+.messageform .merow{
+    display: flex;
+    width: 100%;
+}
+.messageform .merow .inbx50{
+    width: 50%;
+    margin: 0 10px;
+}
+.messageform .merow .inbx100{
+    width: 100%;
+    margin: 0 10px;
+}
+.messageform .merow input,
+.messageform .merow textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    background: transparent;
+    width: 100%;
+    padding-top:10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px;
+    resize: none;
+}
+.messageform .merow input::placeholder,
+.messageform .merow textarea::placeholder{
+    color: #808080;
+}
+
+.messageform .merow textarea{
+    height: 100px;
+}
+.messageform .merow input[type="submit"]{
+    background: #fff;
+    color: black;
+    max-width: 100px;
+    margin: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: none;
+}
+.sec .content{
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800{
+    max-width: 100%;
+    display: block;
+}
+.mxw800 > div{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.mxw800 > div > div{
+    margin-top: 60px;
+    background-color: rgba(0,0,0,.1);
+}
+
+h3
+{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #808080;
+}
+.mxw800 img{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.mxw800 img:hover {
+    opacity: 0.5;
+}
+
+
+.brewer .content{
+
+    margin-top: 40px;
+}
+
+.member {
+    display: flex;
+}
+
+.imgbx{
+    width: 600px;  
+    height: 400px;
+    
+}
+
+.imgbx > img{
+    width: 600px;  
+    height: 400px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.details > div > h2{
+    font-size: 4rem;
+}
+.details > div > h2 > span{
+    font-size: 2rem;
+}
+.details > div > h3 {
+    font-size: 2rem;
+}
+
+
+
+
+#video{
+    padding: 0;
+    position: relative;
+
+}
+.beervideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.videotext{
+    position: relative;
+    z-index: 10;
+}
+
+.videotext > h1 {
+    font-size: 4.5em;
+}
+.videotext > h2 {
+    font-size: 1.5em;
+}
+.videotext > h3 {
+   border: 2px solid seagreen;
+   width: 200px;
+   margin: 0 auto;
+}
+.videotext > h3 > a{
+    text-decoration:none ;
+    font-size: 1em;
+    color: seagreen;
+}
+
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after{
+    content:"\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after{
+    content: "\2212";
+}
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content{
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid black;
+    display: flex;
+}
+.accordion-item-body-content1{
+    margin-right: 10px;
+    width: 400px;
+    height: 400px;
+}
+.accordion-item-body-content2 > h1{
+    font-size: 4rem;
+    margin:20px 0;
+}
+.accordion-item-body-content2 > h2{
+    font-size: 1rem;
+}
+
+@media (max-width: 992px){
+    .sec{
+        padding: 20px;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        box-shadow: 0 10px 0 #000;
+        transition: 0.5s;
+    }
+    .toggle:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header,
+    header.stiky
+    {
+        padding: 5px 50px;
+        background: #fff;
+    }
+    header ul{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+    }
+    header.active ul{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        padding-top: 20px;
+    }
+    header.active ul li a{
+        display: inline-block;
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    
+    header .logo,
+    header ul li a{
+        color: #000;
+    }
+
+    .merow{
+        flex-direction: column;
+    }
+    .messageform .merow .inbx50,
+    .messageform .merow .inbx100{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    .messageform .merow textarea,
+    .messageform .merow input {
+        margin: 20px 0px;
+    }
+
+
+    .intro > .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mxw800{
+        max-width: 80%;
+        display: block;
+    }
+    .mxw800 > div{
+        display: block;
+        margin-top: 10px;
+        
+    }
+    .mxw800 > div > div{
+        margin-top: 30px;
+        background-color: rgba(0,0,0,.1);
+    }
+    
+
+    .mxw800 h3
+    {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .mxw800 p{
+        font-size: 1rem;
+        margin-bottom: 20px;
+
+    }
+    .mxw800 img{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+
+    .member {
+        display: block;
+    }
+    
+    .imgbx{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .imgbx > img{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+    }
+    
+    .details > div > h2{
+        font-size: 1rem;
+    }
+    .details > div > h2 > span{
+        font-size: 0.8rem;
+    }
+    .details > div > h3 {
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+
+    .accordion-item-body-content{
+        display: block;
+    }
+    .accordion-item-body-content1{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    .accordion-item-body-content1 > img {
+        width: 100%;
+
+    }
+    .accordion-item-body-content2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .accordion-item-body-content2 > h1{
+        font-size: 1rem;
+        margin:10px 0;
+    }
+    .accordion-item-body-content2 > h2{
+        font-size: 0.8rem;
+    }
+    
+}
